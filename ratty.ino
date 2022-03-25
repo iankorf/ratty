@@ -22,7 +22,7 @@ push_button button = new_push_button(2, millis());
 
 const char ssid[] = MY_SSID;
 const char pass[] = MY_PASS;
-int status = WL_IDLE_STATUS;
+int status        = WL_IDLE_STATUS;
 	
 void setup_wifi () {
 	String fv = WiFi.firmwareVersion(); 
@@ -43,16 +43,16 @@ void setup_wifi () {
 
 const char serv[] = MY_SERV;
 const char hook[] = MY_HOOK;
-const int port = MY_PORT;
+const int  port   = MY_PORT;
 
 WiFiSSLClient wifi_client;
 HttpClient http_client = HttpClient(wifi_client, serv, port);
 
 void send_button_message(int clicks, bool held) {
-	if			(held)				publish_message(MESSAGEY);
+	if      (held)        publish_message(MESSAGEY);
 	else if (clicks == 1) publish_message(MESSAGE1);
 	else if (clicks == 2) publish_message(MESSAGE2);
-	else if (clicks >	 3) publish_message(MESSAGEX);
+	else if (clicks >  3) publish_message(MESSAGEX);
 }
 
 void publish_message(String message) {
