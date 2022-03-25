@@ -2,7 +2,7 @@
  config.h
 \******************************************************************************/
 #define MY_NAME "Driver"
-#define MY_SSID "TripleApexJetpack"
+#define MY_SSID "..."
 #define MY_PASS "..."
 #define MY_SERV "discord.com"
 #define MY_PORT 443
