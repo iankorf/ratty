@@ -1,6 +1,10 @@
 RATTY
 =====
 
+Cars are loud. It's often difficult to hear what was said over a radio. "Can you
+repeat that" is said way too often. Radios sometime get unplugged. Radio
+communications suck.
+
 RATTY is a minimialist racing communications application for text communication
 among the driver, spotters, and pit. All parties communicate in a Discord
 channel (or the equivalent).
